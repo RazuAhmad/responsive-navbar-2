@@ -47,6 +47,7 @@ const Navbar = () => {
         <div className="hamburger-menu-display">
           {displayMobileMenu ? (
             <AiOutlineClose
+              className="Close__Hamburger-icon"
               color="gray"
               fontSize={45}
               onClick={() => setDisplayMobileMenu(false)}
@@ -61,7 +62,7 @@ const Navbar = () => {
         </div>
       </div>
       {displayMobileMenu && (
-        <div className="mobile__links-menu  navbar__links-font scale-up-center">
+        <div className="mobile__nav-links navbar__links-font scale-up-center ">
           <p>
             <a href="#home">Home</a>
           </p>
