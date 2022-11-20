@@ -26,57 +26,55 @@ const Navbar = () => {
           <a href="#contact">Contact</a>
         </p>
       </div>
-      <div className="app__navbar-social">
-        <div className="app__navbar_social-links">
-          <p>
-            <a href="#facebook">
-              <FaInstagramSquare color="red" fontSize={30} />
-            </a>
-          </p>
-          <p>
-            <a href="#facebook">
-              <FaFacebook color="blue" fontSize={30} />
-            </a>
-          </p>
-          <p>
-            <a href="#facebook">
-              <FaYoutube color="red" fontSize={30} />
-            </a>
-          </p>
-        </div>
-        <div className="hamburger-menu-display">
-          {displayMobileMenu ? (
+
+      <div className="app__navbar_social-links">
+        <p>
+          <a href="#facebook">
+            <FaInstagramSquare color="red" fontSize={30} />
+          </a>
+        </p>
+        <p>
+          <a href="#facebook">
+            <FaFacebook color="blue" fontSize={30} />
+          </a>
+        </p>
+        <p>
+          <a href="#facebook">
+            <FaYoutube color="red" fontSize={30} />
+          </a>
+        </p>
+      </div>
+
+      <div className="hamburger-menu-display">
+        <GiHamburgerMenu
+          color="gray"
+          fontSize={45}
+          onClick={() => setDisplayMobileMenu(true)}
+        />
+
+        {displayMobileMenu && (
+          <div className="mobile__nav-links  scale-up-center ">
             <AiOutlineClose
               className="Close__Hamburger-icon"
-              color="gray"
+              color="white"
               fontSize={45}
               onClick={() => setDisplayMobileMenu(false)}
             />
-          ) : (
-            <GiHamburgerMenu
-              color="gray"
-              fontSize={45}
-              onClick={() => setDisplayMobileMenu(true)}
-            />
-          )}
-        </div>
+            <p>
+              <a href="#home">Home</a>
+            </p>
+            <p>
+              <a href="#about">About</a>
+            </p>
+            <p>
+              <a href="#services">Services</a>
+            </p>
+            <p>
+              <a href="#contact">Contact</a>
+            </p>
+          </div>
+        )}
       </div>
-      {displayMobileMenu && (
-        <div className="mobile__nav-links navbar__links-font scale-up-center ">
-          <p>
-            <a href="#home">Home</a>
-          </p>
-          <p>
-            <a href="#about">About</a>
-          </p>
-          <p>
-            <a href="#services">Services</a>
-          </p>
-          <p>
-            <a href="#contact">Contact</a>
-          </p>
-        </div>
-      )}
     </div>
   );
 };

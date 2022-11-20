@@ -42,11 +42,54 @@
   display: none;
 }
 
+.mobile__nav-links {
+  /* background: #a2a2eb;
+  position: absolute;
+  top: 69px;
+  right: 0;
+  width: 99%;
+  height: 262px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  transition: 0.5s ease;
+
+  flex-direction: column;
+  z-index: 5;
+}
+
+.mobile__nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile__nav-links p {
+  font-size: 50px;
+  font-family: "Merriweather", serif;
+  margin-top: 1rem;
+}
+
 @media screen and (max-width: 975px) {
   .app__navbar-Container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 5px 1fr 1fr 5px;
     margin: 0 0.5rem;
+  }
+
+  .hamburger-menu-display {
+    display: grid;
+    cursor: pointer;
+    grid-column: 5/6;
   }
 
   .app__navbar-links {
@@ -54,25 +97,5 @@
   }
   .app__navbar_social-links {
     display: none;
-  }
-  .hamburger-menu-display {
-    display: flex;
-    cursor: pointer;
-  }
-  .mobile__nav-links {
-    background: #a2a2eb;
-    position: absolute;
-    top: 69px;
-    right: 0;
-    width: 99%;
-    height: 262px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-  }
-  .Close__Hamburger-icon {
-    /* position: absolute; */
   }
 }
