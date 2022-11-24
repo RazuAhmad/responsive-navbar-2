@@ -21,6 +21,12 @@
   font-size: 30px;
 }
 
+/* 3. Cormorant Garamond */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap");
+.standard__text-font {
+  font-family: "Cormorant Garamond", serif;
+}
+
 /* Mobile menu animation hambergur */
 .scale-up-center {
   -webkit-animation: scale-up-center 0.7s cubic-bezier(0.39, 0.575, 0.565, 1)
@@ -47,4 +53,147 @@
     -webkit-transform: scale(1);
     transform: scale(1);
   }
+}
+
+.section__padding {
+  padding: 4rem 2rem;
+}
+
+.custom_btn {
+  padding: 12px 2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+}
+
+.custom_btn:hover {
+  background: orange;
+  color: white;
+  cursor: pointer;
+}
+
+.app_bg {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 129, 255, 1) 0%,
+    rgba(191, 255, 0, 1) 49%,
+    rgba(113, 68, 213, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 129, 255, 1) 0%,
+    rgba(191, 255, 0, 1) 49%,
+    rgba(113, 68, 213, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(0, 129, 255, 1) 0%,
+    rgba(191, 255, 0, 1) 49%,
+    rgba(113, 68, 213, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7144D5', endColorstr='#0081FF', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(0, 129, 255, 1) 0%,
+    rgba(191, 255, 0, 1) 49%,
+    rgba(113, 68, 213, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(0, 129, 255, 1) 0%,
+    rgba(191, 255, 0, 1) 49%,
+    rgba(113, 68, 213, 1) 100%
+  );
+}
+
+.app_skill-bg {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(49, 34, 255, 1) 0%,
+    rgba(255, 193, 7, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(49, 34, 255, 1) 0%,
+    rgba(255, 193, 7, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(49, 34, 255, 1) 0%,
+    rgba(255, 193, 7, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc107', endColorstr='#3122FF', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(49, 34, 255, 1) 0%,
+    rgba(255, 193, 7, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(49, 34, 255, 1) 0%,
+    rgba(255, 193, 7, 1) 100%
+  );
+}
+
+.app__contact-bg {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(50, 50, 45, 1) 0%,
+    rgba(2, 80, 90, 1) 57%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(50, 50, 45, 1) 0%,
+    rgba(2, 80, 90, 1) 57%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(50, 50, 45, 1) 0%,
+    rgba(2, 80, 90, 1) 57%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02505A', endColorstr='#32322D', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(50, 50, 45, 1) 0%,
+    rgba(2, 80, 90, 1) 57%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(50, 50, 45, 1) 0%,
+    rgba(2, 80, 90, 1) 57%
+  );
 }

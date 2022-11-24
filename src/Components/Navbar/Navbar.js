@@ -47,7 +47,7 @@ const Navbar = () => {
 
       <div className="hamburger-menu-display">
         <GiHamburgerMenu
-          color="gray"
+          color="white"
           fontSize={45}
           onClick={() => setDisplayMobileMenu(true)}
         />
@@ -72,6 +72,23 @@ const Navbar = () => {
             <p>
               <a href="#contact">Contact</a>
             </p>
+            <div className="mobile__navbar_social-links">
+              <p>
+                <a href="#facebook">
+                  <FaInstagramSquare color="red" fontSize={50} />
+                </a>
+              </p>
+              <p>
+                <a href="#facebook">
+                  <FaFacebook color="blue" fontSize={50} />
+                </a>
+              </p>
+              <p>
+                <a href="#facebook">
+                  <FaYoutube color="red" fontSize={50} />
+                </a>
+              </p>
+            </div>
           </div>
         )}
       </div>
